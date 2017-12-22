@@ -18,6 +18,10 @@ body {
   padding: 2em 2em 2em 2em;
 }
 
+#navigation {
+  text-align: center;
+}
+
 button {
   background-color: #ccf2ff;
 }
