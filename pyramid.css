@@ -9,6 +9,7 @@ body {
 }
 
 #main {
+  text-align: center;
   padding: 1em 1em 1em 1em;
   line-height: 2em;
 }
