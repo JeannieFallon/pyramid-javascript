@@ -3,12 +3,21 @@ function clearInput(id) {
 }
 
 function setInstructions(id) {
-  document.getElementById(id).value = "Enter a number.";
+  var input = document.getElementById(id);
+  if (input.value == "") {
+    input.value = "NUMBER, PLEASE!";
+  }
+
+  //document.getElementById(id).value = "Enter a number.";
+
 }
 
 function buildPyramid() {
-  var height = document.getElementById('height').value;
-  alert(height);
+  //var height = document.getElementById('height').value;
+  //alert(height);
+
+  window.location.href = "pyramid.html";
+
 }
 
 function goToAbout() {
