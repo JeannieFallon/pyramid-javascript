@@ -1,5 +1,9 @@
-function clearInput(elemId) {
-  document.getElementById(elemId).value = "";
+function clearInput(id) {
+  document.getElementById(id).value = "";
+}
+
+function setInstructions(id) {
+  document.getElementById(id).value = "Enter a number.";
 }
 
 function buildPyramid() {
