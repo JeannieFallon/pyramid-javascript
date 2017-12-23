@@ -7,17 +7,12 @@ function setInstructions(id) {
   if (input.value == "") {
     input.value = "NUMBER, PLEASE!";
   }
-
-  //document.getElementById(id).value = "Enter a number.";
-
 }
 
-function buildPyramid() {
-  //var height = document.getElementById('height').value;
-  //alert(height);
-
+function buildPyramid(id) {
+  var height = document.getElementById(id).value;
+  //TODO pass variable as cookie? or use window.open()?
   window.location.href = "pyramid.html";
-
 }
 
 function goToAbout() {
