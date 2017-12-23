@@ -1,5 +1,3 @@
-console.log("Pyramids galore.");
-
 function clearInput(elemId) {
   document.getElementById(elemId).value = "";
 }
