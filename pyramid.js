@@ -1,5 +1,9 @@
 console.log("Pyramids galore.");
 
+function clearInput(elemId) {
+  document.getElementById(elemId).value = "";
+}
+
 function buildPyramid() {
   var height = document.getElementById('height').value;
   alert(height);
