@@ -11,8 +11,12 @@ function setInstructions(id) {
 
 function buildPyramid(id) {
   var height = document.getElementById(id).value;
-  //TODO pass variable as cookie? or use window.open()?
-  window.location.href = "pyramid.html";
+  var str = "";
+  for (var i = 0; i < height; i++) {
+    str += "*";
+    str += "<br/>"
+  }
+  document.getElementById("pyramid-display").innerHTML = str;
 }
 
 function goToAbout() {
