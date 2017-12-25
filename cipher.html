@@ -3,7 +3,7 @@
   <meta charset="utf-8" />
   <title>Pyramid</title>
   <link rel="stylesheet" type="text/css" href="pyramid.css" />
-  <script src="pyramid.js"></script>
+  <script src="cipher.js"></script>
   <script src="nav.js"></script>
 </head>
 <body>
@@ -20,12 +20,12 @@
   <div id="main">
     <div id="input">
       <p>Enter the phrase to be encoded:</p>
-      <textarea id="plaintext"></textarea>
+      <textarea name="plaintext" id="plaintext"></textarea>
     </div>
     <div id="output">
       <p>Click for cipher text:</p>
-      <button type="submit" name="submit" onclick="caesar('plaintext')">Caesar</button>
-      <textarea></textarea>
+      <button type="submit" name="submit" onclick="goCaesar('plaintext')">Caesar</button>
+      <textarea name="ciphertext" id="ciphertext"></textarea>
     </div>
   </div>
 </body>
