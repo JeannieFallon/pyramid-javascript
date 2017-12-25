@@ -12,10 +12,15 @@ function setInstructions(id) {
 function buildPyramid(id) {
   var height = document.getElementById(id).value;
   var str = "";
-  for (var i = 0; i < height; i++) {
-    str += "*";
-    str += "<br/>"
+  var line = "";
+
+  for (var i = height; i > 0; i--) {
+    for (var j = 0; j < (height - i + 1); j++) {
+      str += "#";
+    }
+    str += "<br/>";
   }
+
   document.getElementById("pyramid-display").innerHTML = str;
 }
 
