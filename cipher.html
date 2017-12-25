@@ -19,12 +19,14 @@
   </div>
   <div id="main">
     <div id="input">
-      <p>Enter the phrase to be encoded:</p>
-      <textarea name="plaintext" id="plaintext"></textarea>
+      <p>Enter plain text:</p>
+      <textarea name="pln-txt" id="pln-txt"></textarea>
+      <p>Enter cipher key:</p>
+      <input type="text" name="key" id="key" onclick="clearKey('key')" />
     </div>
     <div id="output">
-      <p>Click for cipher text:</p>
-      <button type="submit" name="submit" onclick="goCaesar('plaintext')">Caesar</button>
+      <button type="submit" name="submit" onclick="goCaesar('plaintext')">Caesar Cipher</button>
+      <br/>
       <textarea name="ciphertext" id="ciphertext"></textarea>
     </div>
   </div>
