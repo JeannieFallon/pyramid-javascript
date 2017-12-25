@@ -23,11 +23,3 @@ function buildPyramid(id) {
 
   document.getElementById("pyramid-display").innerHTML = str;
 }
-
-function goToAbout() {
-  window.location.href = "about.html";
-}
-
-function goToIndex() {
-  window.location.href = "index.html";
-}

@@ -4,6 +4,7 @@
   <title>Pyramid</title>
   <link rel="stylesheet" type="text/css" href="pyramid.css" />
   <script src="pyramid.js"></script>
+  <script src="nav.js"></script>
 </head>
 <body>
   <div id="header">
@@ -11,19 +12,12 @@
     <img src="pyramid.png" alt="Pyramid" style="width:13em;height:13em;"/>
   </div>
   <div id="navigation">
-      <button type="button" onclick="goToAbout()">About</button>
+    <button type="button" onclick="goToIndex()">Home</button>
+    <button type="button" onclick="goToAbout()">About</button>
+    <button type="button" onclick="goToPyramid()">Pyramid</button>
   </div>
   <div id="main">
-    <div id="user-input">
-        <p>How high is your pyramid?</p>
-        <input type="text" name="height" id="height" value="Enter a number."
-                onclick="clearInput('height')" onblur="setInstructions('height')"/>
-        <br>
-        <button type="submit" name="submit" onclick="buildPyramid('height')">Build that pyramid!</submit>
-    </div>
-    <div id="output">
-      <p id="pyramid-display"></p>
-    </div>
+    Click the links above.
   </div>
 </body>
 </html>

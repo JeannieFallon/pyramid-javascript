@@ -14,9 +14,8 @@ body {
   line-height: 2em;
 }
 
-#user-input {
+#input {
   text-align: center;
-  padding: 2em 2em 2em 2em;
 }
 
 #navigation {
