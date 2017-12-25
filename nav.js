@@ -9,3 +9,7 @@ function goToAbout() {
 function goToPyramid() {
   window.location.href = "pyramid.html";
 }
+
+function goToCipher() {
+  window.location.href = "cipher.html";
+}
