@@ -27,33 +27,26 @@ function goCaesar(txtId, keyId) {
   var plnStr = document.getElementById(txtId).value;
   var cphStr = "";
   var key = parseInt(document.getElementById(keyId).value);
-  var currChar = "";
-  var newChar = "";
+  var char = "";
   var code = 0;
-  var newCd = 0;
-  var currIdx = 0;
-  var newIdx = 0;
-  var isLower = false;
+  var idx = 0;
 
   for (var i = 0; i < plnStr.length; i++) {
+    code = plnStr.charCodeAt(i);
 
-    //TODO test if alpha char
-    if (true) {
-      code = plnStr.charCodeAt(i);
-      if (code >= 97 && code <= 122) {
-        currIdx = getIdxLower(code);
-        newIdx = getRotIdx(currIdx, key);
-        newCd = getCodeLower(newIdx);
-      } else {
-        currIdx = getIdxUpper(code);
-        newIdx = getRotIdx(currIdx, key);
-        newCd = getCodeUpper(newIdx);
-      }
-      newChar = String.fromCharCode(newCd);
-      cphStr += newChar;
-    } else {
-      cphStr += currChar;
+    if (code >= 97 && code <= 122) {
+      idx = getIdxLower(code);
+      var newIdx = getRotIdx(idx, key);
+      code = getCodeLower(newIdx);
+    } else if (code >= 26 && code <= 90) {
+      idx = getIdxUpper(code);
+      var newIdx = getRotIdx(idx, key);
+      code = getCodeUpper(newIdx);
     }
+
+    char = String.fromCharCode(code);
+    cphStr += char;
   }
+
   document.getElementById('ciphertext').innerHTML = cphStr;
 }
