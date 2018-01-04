@@ -38,7 +38,7 @@ function goCaesar(txtId, keyId) {
       idx = getIdxLower(code);
       var newIdx = getRotIdx(idx, key);
       code = getCodeLower(newIdx);
-    } else if (code >= 26 && code <= 90) {
+    } else if (code >= 65 && code <= 90) {
       idx = getIdxUpper(code);
       var newIdx = getRotIdx(idx, key);
       code = getCodeUpper(newIdx);
